@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Virus Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ff4136;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>System Alert!</h1>
+        <p>Your computer has detected a virus!</p>
+        <button onclick="showAlert()">Scan Now</button>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("Virus detected! Your system will shut down in 5 seconds!");
+            // Simulate a fake shutdown by displaying a message
+            setTimeout(() => {
+                alert("Just kidding! Your system is safe! 😄");
+            }, 5000); // 5 seconds delay before showing the safe message
+        }
+    </script>
+</body>
+</html>
